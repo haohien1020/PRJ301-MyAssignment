@@ -9,5 +9,7 @@ package model;
  * @author HP
  */
 public class TimeSlot {
+    private int id ;
+    private String description;
     
 }
