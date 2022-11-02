@@ -8,7 +8,7 @@ package model;
  *
  * @author HP
  */
-public class Attendance {
+ public class Attandance {
     private int id;
     private Session session;
     private Student student;

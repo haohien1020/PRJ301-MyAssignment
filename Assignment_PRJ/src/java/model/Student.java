@@ -4,10 +4,16 @@
  */
 package model;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author HP
  */
 public class Student {
+    private int id ;
+    private String name;
+    private ArrayList<Group> groups = new ArrayList<>();
+    private ArrayList<Attandance> attandance = new ArrayList<>();
     
 }
