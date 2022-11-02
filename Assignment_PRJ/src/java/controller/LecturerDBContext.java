@@ -8,6 +8,6 @@ package controller;
  *
  * @author HP
  */
-public class LecturerDBContext {
+public class LecturerDBContext  {
     
 }
