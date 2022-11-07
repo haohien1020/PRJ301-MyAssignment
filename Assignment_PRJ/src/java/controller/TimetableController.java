@@ -1,6 +1,6 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ * Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Servlet.java to edit this template
  */
 package controller;
 
@@ -11,9 +11,11 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Date;
 import model.Lecture;
+
 import model.Session;
 import model.TimeSlot;
 import util.DateTimeHelper;
@@ -71,6 +73,7 @@ public class TimetableController  extends HttpServlet{
         request.setAttribute("sessions", sessions);
         
         LecturerDBContext lecDB = new LecturerDBContext();
+
         Lecture lecture = lecDB.get(lid);
         request.setAttribute("lecture", lecture);
              ServletResponse response = null;
@@ -82,5 +85,3 @@ public class TimetableController  extends HttpServlet{
    
     }
 }
-    
-

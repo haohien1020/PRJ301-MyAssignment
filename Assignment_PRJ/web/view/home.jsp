@@ -9,58 +9,44 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>FAP</title>
+        <title>JSP Page</title>
     </head>
-    <style>
-        .left-header{
-            width: 555px;
-            border-color: #cccccc;
-            border-style: solid;
-            border-width: 1px;
-            color: #333333;
-            font-size: 13px;
-            line-height: 18.5714px;
-        }
-        .lhd{
-            background-color: #eb9316;
-            color: #ffffff;
-            width: 255px;
-            border-radius: 5px;
-            text-align: center;
-            display: block;
-        }
-        .greet{
-            width: 265px;
-            background-color: #5cb85c;
-            color: #ffffff;
-            display: inline;
-            /*text-align: center;*/
-            margin: 200px;
-            font-size: 25px;
-        }
-        .timetab{
-            border: 1px #333333 solid;
-            margin: 200px;
-            font-size: 25px;
-        }
-        .footer{
-            padding-top: 50px;
-            text-align: center;
-        }
-    </style>
     <body>
         <h1 style="text-align: center;">FPT University Academic Portal</h1>
+        <td colspan="2" class="auto-style1"><strong>FAP mobile app (myFAP) is ready at</strong></td>
+</tr>
+<tr>
+<td><a href="https://apps.apple.com/app/id1527723314">
+<img src="https://fap.fpt.edu.vn/images/app-store.svg" style="width: 120px; height: 40px" alt="apple store" /></a></td>
+<td><a href="https://play.google.com/store/apps/details?id=com.fuct">
+<img src="https://fap.fpt.edu.vn/images/play-store.svg" style="width: 120px; height: 40px" alt="google store" /></a></td>
+</tr>
         <hr>
         <c:if test="${sessionScope.account ne null}">
-            <span class="timetab"><a href="http://localhost:9999/1_PRJ301_Assignment_HE161488/lecturer/timetable?lid=1">Time Table</a></span><br>
+            <span class="timetab"><a href="http://localhost:9999/Assignment_PRJ/lecture/timetable">Time Table</a></span><br>
             <div class="greet">
                 <span> Hello ${sessionScope.account.displayname}, click 
                     <a id="myBtn" href="logout">here</a> to logout. </span>
             </div>
         </c:if>
-        <div>
-
-        </div>
+       <div id="loginform" vertical-align: central">
+<center>
+<div class="row">
+<div class="col-sm-4">
+<select name="ctl00$mainContent$ddlCampus" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$mainContent$ddlCampus\&#39;,\&#39;\&#39;)&#39;, 0)" id="ctl00_mainContent_ddlCampus" class="btn btn-default">
+<option selected="selected" value="">Select Campus</option>
+<option value="3">FU-H&#242;a Lạc</option>
+<option value="4">FU-Hồ Ch&#237; Minh</option>
+<option value="5">FU-Đ&#224; Nẵng</option>
+<option value="6">FU-Cần Thơ</option>
+<option value="7">FU-Quy Nhơn</option>
+</select>
+</div>
+<div class="col-sm-4">
+<div style="margin-left: -50px" class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
+</div>
+<span id="ctl00_mainContent_lblMessage" class="information"></span>
+</div
         <c:if test="${sessionScope.account eq null}">
             <div class="left-header">
                 <span class="lhd"> <b>PLEASE LOGIN BY FPT ACCOUNT</b></span> <br>
@@ -76,5 +62,5 @@
             alert("Are you sure you want log out?");
         });
     </script>
-</body>
+    </body>
 </html>
