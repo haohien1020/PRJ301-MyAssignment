@@ -10,19 +10,10 @@ import java.util.ArrayList;
  *
  * @author HP
  */
-public class Room {
+public class Feature {
     private int id;
     private String name;
-    private ArrayList<Session> sessions = new ArrayList<>();
-
-    public Room(int id, String name) {
-        this.id = id;
-        this.name = name;
-    }
-
-    public Room() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
+    private String url;
 
     public int getId() {
         return id;
@@ -40,13 +31,21 @@ public class Room {
         this.name = name;
     }
 
-    public ArrayList<Session> getSessions() {
-        return sessions;
+    public String getUrl() {
+        return url;
     }
 
-    public void setSessions(ArrayList<Session> sessions) {
-        this.sessions = sessions;
+    public void setUrl(String url) {
+        this.url = url;
     }
-    
+
+    public ArrayList<Role> getRoles() {
+        return roles;
+    }
+
+    public void setRoles(ArrayList<Role> roles) {
+        this.roles = roles;
+    }
+    private ArrayList<Role> roles = new ArrayList<>();
     
 }

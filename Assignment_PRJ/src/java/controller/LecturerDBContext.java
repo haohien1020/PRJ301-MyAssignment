@@ -4,10 +4,16 @@
  */
 package controller;
 
+import model.Lecture;
+
 /**
  *
  * @author HP
  */
 public class LecturerDBContext  {
+
+    Lecture get(int lid) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
     
 }

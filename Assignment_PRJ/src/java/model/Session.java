@@ -93,5 +93,9 @@ public class Session {
     public void setAttendances(ArrayList<Attandance> attendances) {
         this.attendances = attendances;
     }
+
+    public void setTimeslot(TimeSlot t) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
     
 }

@@ -47,12 +47,7 @@ public class DateTimeHelper {
         
         
     }
-    public static int getDayofWeek(java.util.Date d){
-        Calendar c = Calendar.getInstance();
-        c.setTime(d);
-        int dayofWeek = c.get(Calendar.DAY_OF_WEEK);
-        return dayofWeek;
-    }
+   
     public static Date addDays(java.util.Date d , int days){
         Calendar cal = Calendar.getInstance();
         cal.setTime(d);
@@ -110,5 +105,14 @@ public class DateTimeHelper {
         return e_a.compareTo(e_b);
     }
 
+    public static int getDayOfWeek(java.util.Date d) {
+      
+        Calendar c = Calendar.getInstance();
+        c.setTime(d);
+        int dayofWeek = c.get(Calendar.DAY_OF_WEEK);
+        return dayofWeek;
+    }
+    }
+
     
-}
+
