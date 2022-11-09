@@ -5,7 +5,7 @@
 package model;
 
 import java.util.ArrayList;
-import java.util.Date;
+import java.sql.Date;
 
 /**
  *
@@ -13,9 +13,9 @@ import java.util.Date;
  */
 public class Session {
     private int id;
-    private Lecture lecturer;
+    private Lecturer lecturer;
     private Room room;
-    private TimeSlot timelost;
+    private TimeSlot timeslot;
     private Date date;
     private Group group;
     private int index;
@@ -30,11 +30,11 @@ public class Session {
         this.id = id;
     }
 
-    public Lecture getLecturer() {
+    public Lecturer getLecturer() {
         return lecturer;
     }
 
-    public void setLecturer(Lecture lecturer) {
+    public void setLecturer(Lecturer lecturer) {
         this.lecturer = lecturer;
     }
 
@@ -46,12 +46,12 @@ public class Session {
         this.room = room;
     }
 
-    public TimeSlot getTimelost() {
-        return timelost;
+    public TimeSlot getTimeslot() {
+        return timeslot;
     }
 
-    public void setTimelost(TimeSlot timelost) {
-        this.timelost = timelost;
+    public void setTimeslot(TimeSlot timeslot) {
+        this.timeslot = timeslot;
     }
 
     public Date getDate() {
@@ -94,8 +94,4 @@ public class Session {
         this.attendances = attendances;
     }
 
-    public void setTimeslot(TimeSlot t) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-    
 }

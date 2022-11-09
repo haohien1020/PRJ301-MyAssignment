@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
     <servlet>
-        <servlet-name>LecturerTimetableController</servlet-name>
-        <servlet-class>controller.LecturerDBContext</servlet-class>
-    </servlet>
-    <servlet>
         <servlet-name>HomeController</servlet-name>
         <servlet-class>controller.HomeController</servlet-class>
     </servlet>
@@ -17,13 +13,9 @@
         <servlet-class>controller.LoginController</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>TimetableController</servlet-name>
+        <servlet-name>Timetable</servlet-name>
         <servlet-class>controller.TimetableController</servlet-class>
     </servlet>
-    <servlet-mapping>
-        <servlet-name>LecturerTimetableController</servlet-name>
-        <url-pattern>/lecturer/timetable</url-pattern>
-    </servlet-mapping>
     <servlet-mapping>
         <servlet-name>HomeController</servlet-name>
         <url-pattern>/home</url-pattern>
@@ -37,8 +29,8 @@
         <url-pattern>/login</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>TimetableController</servlet-name>
-        <url-pattern>/timetable</url-pattern>
+        <servlet-name>Timetable</servlet-name>
+        <url-pattern>/lecturer/timetable</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

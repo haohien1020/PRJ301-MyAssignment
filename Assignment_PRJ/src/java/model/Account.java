@@ -47,6 +47,10 @@ public class Account {
     public void setRoles(ArrayList<Role> roles) {
         this.roles = roles;
     }
+
+    public void setUsername(String username) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
     
     
 }

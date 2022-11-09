@@ -13,7 +13,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import model.Attandance;
 import model.Group;
-import model.Lecture;
+import model.Lecturer;
 import model.Room;
 import model.Session;
 import model.Student;
@@ -129,7 +129,7 @@ public class SessionDBContext extends DBContext<Session>
                     t.setDescription(rs.getString("tdescription"));
                     ses.setTimeslot(t);
 
-                    Lecture l = new Lecture();
+                    Lecturer l = new Lecturer();
                     l.setId(rs.getInt("lid"));
                     l.setName(rs.getString("lname"));
                     ses.setLecturer(l);
@@ -199,7 +199,7 @@ public class SessionDBContext extends DBContext<Session>
             ResultSet rs = stm.executeQuery();
             while (rs.next()) {
                 Session session = new Session();
-                Lecture l = new Lecture();
+                Lecturer l = new Lecturer();
                 Room r = new Room();
                 Group g = new Group();
                 TimeSlot t = new TimeSlot();

@@ -15,7 +15,7 @@ public class Group {
     private String name;
     private ArrayList<Student> students = new ArrayList<>();
     private Subject subject;
-    private Lecture supervisor;
+    private Lecturer supervisor;
 
     public int getId() {
         return id;
@@ -49,11 +49,11 @@ public class Group {
         this.subject = subject;
     }
 
-    public Lecture getSupervisor() {
+    public Lecturer getSupervisor() {
         return supervisor;
     }
 
-    public void setSupervisor(Lecture supervisor) {
+    public void setSupervisor(Lecturer supervisor) {
         this.supervisor = supervisor;
     }
   
